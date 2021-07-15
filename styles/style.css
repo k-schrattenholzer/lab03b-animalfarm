@@ -46,11 +46,12 @@ section {
 }
 
 header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
+    display: grid;
+    background-color: rgb(137, 137, 226);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;;
+    align-items: center;
+    align-content: center;
 }
 
 footer {
@@ -111,3 +112,15 @@ footer {
     }
 
   }
+  .thumbnail:hover {
+    position:relative;
+    top: +2.5%;
+    bottom: 2.5%;
+    left: 2.5%;
+    right: 2.5%;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+    cursor: pointer;
+}
